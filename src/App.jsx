@@ -9,7 +9,13 @@ const App = () => {
         <h1>Application title</h1>
       </header>
       <main>
-        <ChatEntry data={data}/>
+        <ChatEntry 
+          id={data[0].id}
+          sender={data[0].sender}
+          body={data[0].body}
+          timeStamp={data[0].timeStamp}
+          liked={data[0].liked}
+        />
         {/* Wave 01: Render one ChatEntry component
         Wave 02: Render ChatLog component */}
       </main>

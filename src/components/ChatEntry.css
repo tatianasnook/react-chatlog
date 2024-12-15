@@ -61,6 +61,7 @@ button {
 .chat-entry.local .message {
   color: green;
 }
+
 .chat-entry.local .entry-time {
   text-align: right;
 }
@@ -92,6 +93,7 @@ button {
 .chat-entry.remote .entry-time {
   text-align: left;
 }
+
 .chat-entry.remote .message {
   color: blue;
 }

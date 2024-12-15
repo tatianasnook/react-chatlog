@@ -9,11 +9,13 @@ const ChatEntry = ({ id, sender, body, timeStamp, liked, onLiked }) => {
     onLiked(id);
   };
 
+  const localOrRemote = sender === 'Vladimir' ? 'local' : 'remote';
+
   return (
-    <div className="chat-entry local">
+    <div className={`chat-entry ${localOrRemote}`}>
       <h2 className="entry-name">{sender}</h2>
       <section className="entry-bubble">
-        <p>{body}</p>
+        <p className='message'>{body}</p>
         <p className="entry-time">
           <TimeStamp time={timeStamp} />
         </p>

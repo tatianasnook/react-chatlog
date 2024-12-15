@@ -27,7 +27,9 @@ const App = () => {
   return (
     <div id="App">
       <header>
-        <h1>Chat Between {} and {}</h1>
+        <h1>
+          Chat Between <span className='green'>{data[0].sender}</span> and <span className='blue'>{data[1].sender}</span>
+        </h1>
         <h2>{totalLikes} ❤️s</h2>
       </header>
       <main>
